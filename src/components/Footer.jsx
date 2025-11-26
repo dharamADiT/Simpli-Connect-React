@@ -30,13 +30,13 @@ const Footer = () => {
           <div>
             <h6 className="uppercase mb-4 font-bold text-lg">UseFull Links</h6>
             <ul className="space-y-2">
-              <li className="hover:underline cursor-pointer">About us</li>
-              <li className="hover:underline cursor-pointer">Contact</li>
-              <li className="hover:underline cursor-pointer">Overview</li>
-              <li className="hover:underline cursor-pointer">FAQ</li>
+              <li className="hover:underline text-blue-400 cursor-pointer">About us</li>
+              <li className="hover:underline text-blue-400 cursor-pointer">Contact</li>
+              <li className="hover:underline text-blue-400 cursor-pointer">Overview</li>
+              <li className="hover:underline text-blue-400 cursor-pointer">FAQ</li>
 
-              <li className="hover:underline cursor-pointer">Categories</li>
-              <li className="hover:underline cursor-pointer">Help</li>
+              <li className="hover:underline text-blue-400 cursor-pointer">Categories</li>
+              <li className="hover:underline text-blue-400 cursor-pointer">Help</li>
 
             </ul>
           </div>
@@ -45,9 +45,9 @@ const Footer = () => {
           <div>
             <h6 className="uppercase mb-4 font-bold text-lg">Dashboard links</h6>
             <ul className="space-y-2">
-              <li className="hover:underline cursor-pointer">Student </li>
-              <li className="hover:underline cursor-pointer">Employee</li>
-              <li className="hover:underline cursor-pointer">Entrepreneur</li>
+              <li className="hover:underline text-blue-400 cursor-pointer">Student </li>
+              <li className="hover:underline text-blue-400 cursor-pointer">Employee</li>
+              <li className="hover:underline text-blue-400 cursor-pointer">Entrepreneur</li>
             </ul>
           </div>
 
@@ -75,10 +75,10 @@ const Footer = () => {
 
           {/* Right - Social Icons */}
           <div className="flex gap-4 mt-5 md:mt-0 text-sm">
-            <Link  to= { "https://github.com/dharamADiT/Simpli-Connect-React"}className="border border-white px-3 py-1 rounded-full hover:bg-white hover:text-black transition">
+            <Link  to= { "https://github.com/dharamADiT/Simpli-Connect-React"}className=" bg-blue-600  px-3 py-1 rounded-full  hover:bg-blue-800 transition">
               GitHub
             </Link>
-            <Link to={"https://www.linkedin.com/in/dharam-baghel-53bab4267/?originalSubdomain=in"} className="border border-white px-3 py-1 rounded-full hover:bg-white hover:text-black transition">
+            <Link to={"https://www.linkedin.com/in/dharam-baghel-53bab4267/?originalSubdomain=in"} className=" bg-blue-600  px-3 py-1 rounded-full  hover:bg-blue-800 transition">
               Linkedin
             </Link>
             

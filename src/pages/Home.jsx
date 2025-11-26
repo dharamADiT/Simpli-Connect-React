@@ -40,7 +40,7 @@ const Home = () => {
       </section>
       <section className=" pt-16">
         <div className="max-w-5xl mx-auto px-4 text-white">
-          <h2 className="text-center text-3xl md:text-4xl font-bold mb-8">
+          <h2 className="text-center text-3xl md:text-4xl underline  font-bold mb-8">
             About
           </h2>
 
@@ -77,7 +77,7 @@ const Home = () => {
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
           >
             LOGIN
-          </Link>{" "}
+          </Link>
         </div>
       </section>
     </>

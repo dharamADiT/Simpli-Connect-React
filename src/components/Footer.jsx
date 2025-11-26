@@ -2,6 +2,7 @@ import React from "react";
 import footerBg from "/public/logo3.png"; 
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
   return (
     <section
@@ -9,12 +10,14 @@ const Footer = () => {
     >
       {/* Background Image */}
       <div
-        className="absolute  inset-0  bg-cover bg-center"
-        style={{ backgroundImage: `url(${footerBg})` }}
-      ></div>
+        className="absolute  inset-0 bg-cover bg-center"
+        
+      >
+        <img src={footerBg} className="w-full" alt="" />
+      </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute  inset-0 bg-black/70"></div>
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 py-16 z-10">
@@ -67,21 +70,19 @@ const Footer = () => {
           {/* Left */}
           <div className="text-center md:text-left text-sm">
             © 2025 Copyright:
-            <Link to={""} className="underline ml-1">SimpliConnect.com</Link>
+            <Link to={"https://simpli-connect-react.vercel.app/"} className="underline ml-1">SimpliConnect.com</Link>
           </div>
 
           {/* Right - Social Icons */}
           <div className="flex gap-4 mt-5 md:mt-0 text-sm">
-            <Link className="border border-white px-3 py-1 rounded-full hover:bg-white hover:text-black transition">
+            <Link  to= { "https://github.com/dharamADiT/Simpli-Connect-React"}className="border border-white px-3 py-1 rounded-full hover:bg-white hover:text-black transition">
               GitHub
             </Link>
-            <Link className="border border-white px-3 py-1 rounded-full hover:bg-white hover:text-black transition">
+            <Link to={"https://www.linkedin.com/in/dharam-baghel-53bab4267/?originalSubdomain=in"} className="border border-white px-3 py-1 rounded-full hover:bg-white hover:text-black transition">
               Linkedin
             </Link>
             
-            <Link className="border border-white px-3 py-1 rounded-full hover:bg-white hover:text-black transition">
-              Instagram
-            </Link>
+
           </div>
 
         </div>

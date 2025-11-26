@@ -9,22 +9,42 @@ import Categori from '../pages/Categori'
 import Help from '../pages/Help'
 import FAQ from '../pages/FAQ'
 import PageNotFound from '../pages/PageNotFound'
-
+import Layout from '../Layout'
+import Register from '../pages/Register'
 const MainRoutes = () => {
   return (
-    <Routes>
-      <Route path='/' element={<Home/>}></Route>
-      <Route path='/about' element={<About/>}></Route>
-      <Route path='/contact' element={<Contact/>}></Route>
-      <Route path='/leadingbanks' element={<LeadingBanks/>}></Route>
-      <Route path='/overview' element={<Overview/>}></Route>
+    <Routes  >
+      <Route element={<Layout/>}>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/leadingbanks' element={<LeadingBanks/>}/>
+      <Route path='/overview' element={<Overview/>}/>
+      <Route path='/categori' element={<Categori/>}/>
+      <Route path='/faq' element={<FAQ/>}/>
+      <Route path='/help' element={<Help/>}/>
+
+      <Route path='*' element={<PageNotFound/>}/>
+      </Route>
       <Route path='/login' element={<Login/>}></Route>
-      <Route path='/categori' element={<Categori/>}></Route>
-      <Route path='/faq' element={<FAQ/>}></Route>
-      <Route path='/help' element={<Help/>}></Route>
-      <Route path='*' element={<PageNotFound/>}></Route>
+      <Route path='/register' element={<Register/>}></Route>
 
     </Routes>
+
+       
+
+        
+        // <Route>
+        //   <Route path="/" element={<Home />} />
+        //   <Route path="/about" element={<About />} />
+        // </Route>
+
+       
+        // <Route path="/login" element={<Login />} />
+        // <Route path="/register" element={<Register />} />
+
+      
+
   )
 }
 

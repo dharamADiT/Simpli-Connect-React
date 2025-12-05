@@ -64,22 +64,81 @@ const Home = () => {
           </p>
         </div>
       </section>
+     <section className="bg-[#2e2c2c79] my-16 w-full px-6 md:px-10 py-16 flex flex-col items-center">
+  <h2 className="text-center text-3xl md:text-4xl underline font-bold mb-10">
+    Our Clients
+  </h2>
 
-      <section className="relative w-full py-16">
-        <img src={banner} className="w-full h-[500px] object-cover" />
+  <div className="w-full max-w-7xl flex flex-col md:flex-row gap-10 md:gap-14 text-center">
+    
+    {/* Students */}
+    <div className="w-full md:w-1/3">
+      <h2 className="text-2xl text-blue-600 font-bold">Students</h2>
+      <p className="text-left py-5 text-gray-300 leading-relaxed">
+        Student accounts can be opened online or at a branch. Once created,
+        students can access online banking, use the mobile app, and manage
+        finances easily from anywhere with a debit card.
+      </p>
+      <Link to={"/student_dashboard"} className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+        More
+      </Link>
+    </div>
 
-        <div className="absolute inset-0 py-16 bg-black/60"></div>
+    {/* Employees */}
+    <div className="w-full md:w-1/3">
+      <h2 className="text-2xl text-blue-600 font-bold">Employees</h2>
+      <p className="text-left py-5 mb-6 text-gray-300 leading-relaxed">
+        Employees can access tailored financial solutions through leading banks
+        like Canara Bank, Federal Bank, and SBI, ensuring support for their
+        individual financial goals and needs.
+      </p>
+      <Link className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+        More
+      </Link>
+    </div>
 
-        <div className="absolute inset-0 flex flex-col gap-10 justify-center items-center">
-          <h2 className="text-white text-5xl ">Login For More</h2>
-          <Link
-            to={"/login"}
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
-          >
-            LOGIN
-          </Link>
-        </div>
-      </section>
+    {/* Entrepreneur */}
+    <div className="w-full md:w-1/3">
+      <h2 className="text-2xl text-blue-600 font-bold">Entrepreneur</h2>
+      <p className="text-left mb-12 py-5 text-gray-300 leading-relaxed">
+        Banks support entrepreneurs with financial assistance, expert guidance,
+        and resources that help new ventures grow and succeed.
+      </p>
+      <Link className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+        More
+      </Link>
+    </div>
+
+  </div>
+</section>
+
+
+      <section className="relative w-full py-10 md:py-16">
+  {/* Background Image */}
+  <img
+    src={banner}
+    className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+    alt="banner"
+  />
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/60"></div>
+
+  {/* Content */}
+  <div className="absolute inset-0 flex flex-col gap-6 md:gap-10 justify-center items-center text-center px-4">
+    <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">
+      Login For More
+    </h2>
+
+    <Link
+      to={"/login"}
+      className="inline-block bg-blue-600 text-white px-5 py-2.5 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+    >
+      LOGIN
+    </Link>
+  </div>
+</section>
+
     </>
   );
 };

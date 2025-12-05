@@ -63,7 +63,7 @@ const Footer = () => {
         {/* <div className=" not-enabled: mt-10 mb-6"></div> */}
 
        
-        <div className="flex flex-col md:flex-row mt-18 justify-between items-center">
+        <div className="flex flex-col md:flex-row mt-28 justify-between items-center">
 
          
           <div className="text-center md:text-left text-sm">

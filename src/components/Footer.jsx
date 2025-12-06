@@ -53,7 +53,7 @@ const Footer = () => {
       
           <div>
             <h6 className="uppercase mb-4 font-bold text-lg">Contact</h6>
-            <p>📍 Gurgaon Haryanad</p>
+            <p>📍 Gurgaon Haryana</p>
             <p >📧 OUTOFTHEBOX@gmail.com</p>
             <p>📞 7357888143</p>
            

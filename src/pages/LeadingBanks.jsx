@@ -8,7 +8,7 @@ const LeadingBanks = () => {
   return (
     <div className="w-full bg-black text-white">
     
-      <section className="py-10 px-4 lg:px-20 flex flex-col lg:flex-row items-center gap-10">
+      <section className="py-10 px-4 lg:px-10 flex flex-col lg:flex-row items-center gap-10">
         <div className="w-full lg:w-1/2 rounded-2xl overflow-hidden shadow-lg">
           <img src={banks} alt="Bank Image" className="w-full h-full object-cover" />
         </div>
@@ -27,8 +27,8 @@ const LeadingBanks = () => {
 
     
       <section className="py-12 px-4 lg:px-20 bg-black text-white">
-        <h3 className="text-center text-2xl font-semibold mb-10">
-          State Bank of India: Serving the Nation for Over Two Centuries
+        <h3 className="text-center text-3xl font-bold mb-10">
+        State Bank of India:Serving the Nation for Over Two Centuries
         </h3>
         <div className="flex flex-col lg:flex-row gap-10 items-center">
           <div className="w-full lg:w-1/2 rounded-xl overflow-hidden shadow-lg bg-gray-900 p-4">
@@ -46,7 +46,7 @@ const LeadingBanks = () => {
         </div>
       </section>
 
-      {/* Section 3 */}
+     
       <section className="py-12 px-4 lg:px-20 bg-black">
         <h2 className="text-center text-3xl font-bold mb-10">
           Federal Reserve Takes Action to Stabilize the Economy
@@ -64,12 +64,12 @@ const LeadingBanks = () => {
               Students get education loans, scholarships, savings accounts. Entrepreneurs receive business
               loans and SMEs support. Employees enjoy salary accounts, loans, and retirement solutions.
             </p>
-            <img src={federal} alt="Federal Bank" className="w-full h-70 rounded-lg mt-4" />
+            <img src={federal} alt="Federal Bank" className="w-full h-86   rounded-lg mt-4" />
           </div>
         </div>
       </section>
 
-      {/* Section 4 */}
+   
       <section className="py-12 px-4 lg:px-20 bg-black">
         <h2 className="text-center text-3xl font-bold mb-10">
           Canara Bank Reports Strong Financial Performance

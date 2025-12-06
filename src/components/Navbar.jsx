@@ -59,7 +59,7 @@ const Navbar = () => {
       </nav>
 
       {open && (
-        <nav className="absolute top-20 left-0 w-full bg-cyan-300 shadow-md flex flex-col gap-5 text-lg py-6 px-6 md:hidden z-50">
+        <nav className="absolute top-20 left-0 w-full  bg-gray-700 shadow-md flex flex-col gap-5 text-lg py-6 px-6 md:hidden z-50">
           <NavLink
             onClick={() => setOpen(false)}
             className={({ isActive }) => (isActive ? "text-blue-500" : "")}
